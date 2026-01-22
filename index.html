@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alphaz Server</title>
+  <meta name="description" content="Alphaz Server – A welcoming and enjoyable Discord community." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #12182a;
+      --primary: #a855f7;
+      --secondary: #c084fc;
+      --text: #f5f3ff;
+      --muted: #c4b5fd;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(124,140,255,.15), transparent),
+                  radial-gradient(800px 500px at 90% 10%, rgba(34,211,238,.15), transparent),
+                  var(--bg);
+      color: var(--text);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      padding: 64px 24px 32px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #0b0f1a;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(0,0,0,.45);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)), var(--card);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(400px 120px at 20% -20%, rgba(124,140,255,.15), transparent);
+      pointer-events: none;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+
+    .invite {
+      margin-top: 56px;
+      text-align: center;
+    }
+
+    .invite .box {
+      display: inline-block;
+      padding: 24px 28px;
+      border-radius: 20px;
+      background: var(--card);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 20px 48px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Alphaz Server</h1>
+    <p>
+      A friendly and enjoyable Discord community where everyone is welcome.
+      Hang out, chat, share interests, and be part of something fun.
+    </p>
+    <a class="cta" href="https://discord.gg/fVKanQzt2T" target="_blank" rel="noopener">
+      Join the Discord
+    </a>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h3>🤝 Welcoming Community</h3>
+        <p>
+          Alphaz Server is built around respect and good vibes.
+          New members are always greeted and included.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💬 Active Chats</h3>
+        <p>
+          From casual conversations to deep discussions,
+          there’s always someone to talk to and something happening.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎉 Events & Fun</h3>
+        <p>
+          Community events, games, and surprises keep the server
+          exciting and enjoyable for everyone.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🛡️ Safe & Moderated</h3>
+        <p>
+          Clear rules and active moderation ensure a safe,
+          comfortable environment for all members.
+        </p>
+      </div>
+    </section>
+
+    <section class="invite">
+      <div class="box">
+        <h2>Ready to join Alphaz Server?</h2>
+        <p style="color: var(--muted); margin-bottom: 18px;">
+          Click the button below and become part of the community today.
+        </p>
+        <a class="cta" href="https://discord.gg/fVKanQzt2T" target="_blank" rel="noopener">
+          Join Now
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Alphaz Server · Not affiliated with Discord Inc.
+  </footer>
+</body>
+</html>
